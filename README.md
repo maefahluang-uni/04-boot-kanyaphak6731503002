@@ -14,7 +14,7 @@ Complete the code in the `User` class to define the user model. The user model s
 
 **User Controller**
 
-Use a HashMap to store registered users. Define a static HashMap in the `UserController` class to store the registered users. The key of the HashMap should be the username, and the value should be the user object. Complete the code in the `UserController` class to implement the following functions:
+Use a  HashMap store registered users. Define a static HashMap in the `UserController` class to store the registered users. The key of the HashMap should be the username, and the value should be the user object. Complete the code in the `UserController` class to implement the following functions:
 
 * `POST /users` registerUser: This function should register a new user by adding the user to the HashMap. This function should be called by a `POST` request to receive the user’s JSON and return a `201 CREATED` status. If the username already exists, the function should return `409 CONFLICT`.
 * `GET /users/{username}` getUser: This function should be called by a `GET` request to retrieve the JSON of the user with the given username, returning a `200 OK` status. If the user does not exist, the function should return `404 NOT FOUND`.
